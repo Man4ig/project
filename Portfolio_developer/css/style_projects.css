@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body, html {
+  font-family: "JetBrains Mono";
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.headder__wrapper {
+  background-color: #29343f;
+  height: 25px;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.header__btn div {
+  margin-left: 0.5%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.header__btn_red {
+  background: #ebcb8b;
+}
+
+.header__btn_orange {
+  background: #a3be8c;
+}
+
+.header__btn_grey {
+  background: #bf616a;
+}
+
+.header__name {
+  color: #687583;
+  padding-left: 42.5%;
+}
+
+@media (max-width: 575.98px) {
+  .header__name {
+    padding-left: 25%;
+  }
+}
+.title__wrapper {
+  background-color: #191e22;
+  height: 30px;
+  border: 2px solid #39434b;
+}
+
+.title__list {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: -2px 0 0 -2px;
+}
+
+.title__list a {
+  display: flex;
+  color: #9cafc3;
+  padding: 0 4%;
+  font-size: 12px;
+  align-items: center;
+}
+
+.title__list a:hover {
+  color: #efad12;
+}
+
+.title__list a:first-child {
+  background-color: #191e22;
+  min-height: 100%;
+  border: 2px solid #39434b;
+}
+
+.title__list a:nth-child(2) {
+  background-color: #2d3842;
+  min-height: 100%;
+  color: #efad12;
+  border-top: 3px solid #bf616a;
+}
+
+.title__list a:last-child {
+  background-color: #191e22;
+  height: 30px;
+  border: 2px solid #39434b;
+}
+
+.projects {
+  z-index: 1;
+  background-color: #2d3842;
+  flex: 1 1 auto;
+}
+
+.projects__shadow {
+  background-color: #2d3842;
+  height: 10px;
+  box-shadow: 0px 3px 3px rgba(30, 30, 30, 0.604);
+  position: inherit;
+  z-index: 1;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__title {
+  position: relative;
+}
+
+.projects__title img:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 800зч;
+}
+
+.projects__title img {
+  max-width: 30%;
+  margin: 30px 10px;
+  border-radius: 5px;
+}
+
+.projects__title img:first-child {
+  margin-left: 30px;
+}
+
+@media (max-width: 1300px) {
+  .projects__title img {
+    min-width: 45%;
+  }
+}
+@media (max-width: 900px) {
+  .projects__title img {
+    min-width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .projects__title img {
+    min-width: 85%;
+  }
+}
+.footer {
+  z-index: 2;
+}
+
+.footer__wrapper {
+  height: 50px;
+  display: flex;
+  background: #2d3842;
+  border: 2px solid #39434b;
+}
+
+.footer__write {
+  color: #eff0f2;
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin: 0 0.5%;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts img {
+  height: 20px;
+}
+
+.footer__contacts img:hover {
+  height: 30px;
+}
+
+.footer__contacts a {
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer__contacts a:first-child {
+  border-left: 2px solid #39434b;
+}
+
+.footer__contacts a:last-child {
+  border-right: 2px solid #39434b;
+}
+
+.footer__contacts a:nth-child(2) {
+  border-right: 2px solid #39434b;
+  border-left: 2px solid #39434b;
+}
